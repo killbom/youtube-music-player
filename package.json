@@ -12,7 +12,7 @@
     "url": "git://github.com/twolfson/youtube-music-electron.git"
   },
   "license": "Unlicense",
-  "main": "lib/youtube-music-electron.js",
+  "main": "./lib/youtube-music-electron.js",
   "engines": {
     "node": ">= 6.0.0"
   },
@@ -20,18 +20,24 @@
     "youtube-music-electron": "bin/youtube-music-electron.js"
   },
   "scripts": {
+    "install": "node-gyp rebuild --target=v8.11.3 --dist-url=https://atom.io/download/atom-shell --arch=x64",
     "start": "node bin/youtube-music-electron.js",
-    "build-deps": "node-gyp rebuild --target=v8.11.3",
-    "postinstall": "install-app-deps",
+    "postinstall": "electron-builder install-app-deps",
     "build-mac": "build -m --x64",
     "build-win": "build -w --x64"
   },
   "build": {
     "productName": "Youtube Music Player",
-    "icon": "./icon/icon",
+    "icon": "./icon/icon.png",
     "appId": "se.internetet.youtubemusicplayer",
+    "asar": false,
     "files": [
-      "build/"
+      "build/**/*",
+      "bin/**/*",
+      "node_modules/**/*",
+      "lib/**/*",
+      "resources/**/*",
+      "package.json"
     ],
     "win": {
       "target": [
@@ -39,7 +45,6 @@
       ]
     },
     "mac": {
-      "icon": "./icon/icon.icns",
       "target": [
         "zip"
       ],
@@ -52,6 +57,7 @@
     "configstore": "~3.1.2",
     "monogamous": "~1.0.3",
     "nan": "^2.10.0",
+    "path": "^0.12.7",
     "replify": "~1.2.0",
     "semver": "^5.5.0",
     "underscore": "~1.9.1",
@@ -60,6 +66,7 @@
   "devDependencies": {
     "electron": "~2.0.2",
     "electron-builder": "^20.15.1",
+    "electron-rebuild": "^1.7.3",
     "foundry": "~4.4.2",
     "foundry-release-git": "~2.0.2",
     "foundry-release-npm": "~2.0.2",

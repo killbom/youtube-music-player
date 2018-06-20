@@ -48,7 +48,10 @@ CFLAGS_OBJCC_Debug :=
 INCS_Debug := \
 	-I/Users/simonhillbom/.node-gyp/8.11.3/include/node \
 	-I/Users/simonhillbom/.node-gyp/8.11.3/src \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/openssl/config \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/openssl/openssl/include \
 	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/uv/include \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/zlib \
 	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/v8/include \
 	-I$(srcdir)/node_modules/nan
 
@@ -95,7 +98,10 @@ CFLAGS_OBJCC_Release :=
 INCS_Release := \
 	-I/Users/simonhillbom/.node-gyp/8.11.3/include/node \
 	-I/Users/simonhillbom/.node-gyp/8.11.3/src \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/openssl/config \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/openssl/openssl/include \
 	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/uv/include \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/zlib \
 	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/v8/include \
 	-I$(srcdir)/node_modules/nan
 

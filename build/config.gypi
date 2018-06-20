@@ -69,14 +69,14 @@
     "version_git_tag": "true",
     "init_license": "MIT",
     "registry": "https://registry.yarnpkg.com",
-    "save_prefix": "^",
     "strict_ssl": "true",
+    "save_prefix": "^",
     "version_git_message": "v%s",
-    "version_git_sign": "",
-    "ignore_scripts": "",
     "user_agent": "yarn/1.6.0 npm/? node/v10.4.1 darwin x64",
-    "init_version": "1.0.0",
+    "ignore_scripts": "",
+    "version_git_sign": "",
     "ignore_optional": "",
+    "init_version": "1.0.0",
     "version_tag_prefix": "v"
   }
 }
