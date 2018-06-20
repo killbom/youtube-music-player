@@ -8,8 +8,8 @@
       "conditions": [
         ["OS==\"mac\"", {
           "sources": [
-            "lib/darwin/module.mm",
-            "lib/darwin/service.mm"
+            "lib/media-control/darwin/module.mm",
+            "lib/media-control/darwin/service.mm"
           ],
           "libraries": [ "-framework Foundation -framework AppKit -framework MediaPlayer" ]
         }]

@@ -46,13 +46,10 @@ CFLAGS_OBJC_Debug :=
 CFLAGS_OBJCC_Debug :=
 
 INCS_Debug := \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/include/node \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/src \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/deps/openssl/config \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/deps/openssl/openssl/include \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/deps/uv/include \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/deps/zlib \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/deps/v8/include \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/include/node \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/src \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/uv/include \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/v8/include \
 	-I$(srcdir)/node_modules/nan
 
 DEFS_Release := \
@@ -96,18 +93,15 @@ CFLAGS_OBJC_Release :=
 CFLAGS_OBJCC_Release :=
 
 INCS_Release := \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/include/node \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/src \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/deps/openssl/config \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/deps/openssl/openssl/include \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/deps/uv/include \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/deps/zlib \
-	-I/Users/simonhillbom/.node-gyp/8.4.0/deps/v8/include \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/include/node \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/src \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/uv/include \
+	-I/Users/simonhillbom/.node-gyp/8.11.3/deps/v8/include \
 	-I$(srcdir)/node_modules/nan
 
 OBJS := \
-	$(obj).target/$(TARGET)/lib/darwin/module.o \
-	$(obj).target/$(TARGET)/lib/darwin/service.o
+	$(obj).target/$(TARGET)/lib/media-control/darwin/module.o \
+	$(obj).target/$(TARGET)/lib/media-control/darwin/service.o
 
 # Add to the list of files we specially track dependencies for.
 all_deps += $(OBJS)
