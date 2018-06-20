@@ -1,0 +1,1 @@
+cmd_Release/media-service.node := c++ -bundle -undefined dynamic_lookup -Wl,-no_pie -Wl,-search_paths_first -mmacosx-version-min=10.7 -arch x86_64 -L./Release -stdlib=libc++  -o Release/media-service.node Release/obj.target/media-service/lib/darwin/module.o Release/obj.target/media-service/lib/darwin/service.o -framework Foundation -framework AppKit -framework MediaPlayer
